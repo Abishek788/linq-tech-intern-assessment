@@ -1,5 +1,3 @@
-# Data Ingestion
-
 ## Overview of `data_ingest.py`
 
 The `data_ingest.py` script is responsible for **generating and inserting mock metric data into MongoDB**. It acts as the data ingestion layer for the project, producing realistic, time-series metric entries that follow the schema enforced in the `metrics` collection. Here’s what it does step-by-step:
