@@ -1,8 +1,3 @@
-
----
-
-# datastore-setup.md
-```markdown
 # Datastore Setup (MongoDB)
 
 ## Why MongoDB Was the Best Choice
