@@ -34,34 +34,3 @@ Each document follows a light schema:
   "value": <number>,
   "timestamp": "<ISODate>"
 }
-
-##Architecture Overview
-[ MongoDB Setup Script ]
-          ↓
-[ data_ingest.py ]  → inserts mock docs
-          ↓
-[ visualize_metrics.py ] → renders line chart → dashboard.png
-
-
-##mando-db install
-brew tap mongodb/brew
-brew install mongodb-community@7.0
-brew services start mongodb-community@7.0
-
-##Validate-running 
-mongosh
-
-##Inside the Mongo shell:
-use linq_db
-db.metrics.find().pretty()
-
-
-##Create Database & Insert Data
-python3 setup_mongodb.py
-
-##Ingest mock data (example inserts 50 docs):
-python3 data_ingest.py --count 50
-
-##pip install matplotlib pymongo
-python3 visualize_metrics.py
-
